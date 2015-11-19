@@ -60,7 +60,7 @@
 
     cell.titleLabel.text = [NSString stringWithFormat:@"第%ld行测试用数据", indexPath.row];
     
-    [self setImageForCell:cell atIndexPath:indexPath];
+    [self setImageForCell:cell forIndexPath:indexPath];
     
     return cell;
 }
@@ -79,55 +79,61 @@
 
         [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-
+    if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // 插入/添加 的逻辑
+    }
+    
 }
 
 #pragma mark - private method
 
-- (void)setImageForCell:(HHPictureCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+- (void)setImageForCell:(HHPictureCell *)cell forIndexPath:(NSIndexPath *)indexPath{
     
     UIImage *image = self.imagesDic[self.pictureArr[indexPath.row]];
-    if (image) {
+    if (image) { // 1.如果内存（字典）中有数据，则执行
         cell.titleImageView.image = image;
         NSLog(@"hit memory:%@",self.pictureArr[indexPath.row]);
-    } else {
+    } else { // 2.如果字典中没有数据，则从磁盘中读
         NSString *filePath = [self.cachesPath stringByAppendingPathComponent:[self.pictureArr[indexPath.row] lastPathComponent]];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
-        if (data) {
+        if (data) { // 3.如果磁盘中有数据，则读取
             cell.titleImageView.image = [UIImage imageWithData:data];
             NSLog(@"hit disk:%@",self.pictureArr[indexPath.row]);
-        } else {
+        } else { // 4.如果磁盘中没有数据，才开始下载
             cell.titleImageView.image = [UIImage imageNamed:@"placeHolder"];
             // 开始下载
-            [self downloadImageAtIndexPath:indexPath];
+            [self downloadImageForIndexPath:indexPath];
         }
     }
     
 }
 
-- (void)downloadImageAtIndexPath:(NSIndexPath *)indexPath {
+- (void)downloadImageForIndexPath:(NSIndexPath *)indexPath {
     
-    __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self; // 为避免block中的引用循环
     
     NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
         NSString *str = weakSelf.pictureArr[indexPath.row];
         NSURL *url = [NSURL URLWithString:str];
-        
+        if (!url) { // 判断URL是否生成
+            NSLog(@"url有误，请仔细检查");
+            return;
+        }
         
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
         request.timeoutInterval = 20;
         NSURLResponse *response = nil;
         NSError *error = nil;
         NSData *iconData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-        if (iconData.length < 1) {
-            NSLog(@"error:%@", error);
+        if (iconData.length < 1) { // 判断请求是否发送成功，是否返回了数据
+            NSLog(@"下载失败，error:%@", error);
             return;
         }
         
         NSLog(@"下载完毕：%@", weakSelf.pictureArr[indexPath.row]);
 
         UIImage *image = [UIImage imageWithData:iconData];
-        if (image != nil) {
+        if (image != nil) { // 判断是否能够解析出数据，image是否为空
             weakSelf.imagesDic[weakSelf.pictureArr[indexPath.row]] = image;
         }
         
@@ -136,17 +142,16 @@
         [data writeToFile:filePath atomically:YES];
         
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // 使用回调方法拿到cell，而不是直接把cell传过来，避免了tableViewCell显示时的乱序，因为cell是可以复用的，而indexPath是唯一的（section_row）
+            // 回调方法的调用一定要记清楚，[xxx.tableView cellForRowAtIndexPath:indexPath]
             HHPictureCell *cell = (HHPictureCell *)[weakSelf.tableView cellForRowAtIndexPath:indexPath];
             NSLog(@"indexPath:%@", indexPath);
-            if (iconData.length < 1) {
-                NSLog(@"未下载");
-            }
             cell.titleImageView.image = [UIImage imageWithData:iconData];
         }];    
     }];
     
     [weakSelf.queue addOperation:operation];
-
+    
 }
 
 #pragma mark - setter and getter

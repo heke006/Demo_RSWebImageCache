@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>135123E6-CE07-4239-8407-2EBDF8DA8D21</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HHDemo_Pictures</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>529B063AC3A957CC44FBEF9A92994F5D1FC0D442</key>
+		<string>github.com:riversea2015/HHDemo_Pictures.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HHDemo_Pictures.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>529B063AC3A957CC44FBEF9A92994F5D1FC0D442</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:riversea2015/HHDemo_Pictures.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>529B063AC3A957CC44FBEF9A92994F5D1FC0D442</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>529B063AC3A957CC44FBEF9A92994F5D1FC0D442</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HHDemo_Pictures</string>
+		</dict>
+	</array>
+</dict>
+</plist>
