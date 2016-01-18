@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B5994551C4CA615002724C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5994541C4CA615002724C4 /* main.m */; };
+		1B5994601C4CA615002724C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B59945F1C4CA615002724C4 /* Assets.xcassets */; };
+		1B5994631C4CA615002724C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5994611C4CA615002724C4 /* LaunchScreen.storyboard */; };
+		1B59946E1C4CA616002724C4 /* Demo_RSWebImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59946D1C4CA616002724C4 /* Demo_RSWebImageCacheTests.m */; };
+		1B5994791C4CA616002724C4 /* Demo_RSWebImageCacheUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5994781C4CA616002724C4 /* Demo_RSWebImageCacheUITests.m */; };
+		1B5994911C4CA775002724C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59948B1C4CA775002724C4 /* AppDelegate.m */; };
+		1B5994921C4CA775002724C4 /* RSWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59948E1C4CA775002724C4 /* RSWebImageViewController.m */; };
+		1B59949B1C4CA807002724C4 /* RSWebImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5994991C4CA807002724C4 /* RSWebImageCell.m */; };
+		1B59949C1C4CA807002724C4 /* RSWebImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B59949A1C4CA807002724C4 /* RSWebImageCell.xib */; };
+		1B59949F1C4CA833002724C4 /* RSWebImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59949E1C4CA833002724C4 /* RSWebImageModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B59946A1C4CA616002724C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5994481C4CA615002724C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B59944F1C4CA615002724C4;
+			remoteInfo = Demo_RSWebImageCache;
+		};
+		1B5994751C4CA616002724C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5994481C4CA615002724C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B59944F1C4CA615002724C4;
+			remoteInfo = Demo_RSWebImageCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B5994501C4CA615002724C4 /* Demo_RSWebImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_RSWebImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5994541C4CA615002724C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B59945F1C4CA615002724C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B5994621C4CA615002724C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B5994641C4CA615002724C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5994691C4CA616002724C4 /* Demo_RSWebImageCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_RSWebImageCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B59946D1C4CA616002724C4 /* Demo_RSWebImageCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_RSWebImageCacheTests.m; sourceTree = "<group>"; };
+		1B59946F1C4CA616002724C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5994741C4CA616002724C4 /* Demo_RSWebImageCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_RSWebImageCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5994781C4CA616002724C4 /* Demo_RSWebImageCacheUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_RSWebImageCacheUITests.m; sourceTree = "<group>"; };
+		1B59947A1C4CA616002724C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B59948A1C4CA775002724C4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B59948B1C4CA775002724C4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B59948D1C4CA775002724C4 /* RSWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSWebImageViewController.h; sourceTree = "<group>"; };
+		1B59948E1C4CA775002724C4 /* RSWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSWebImageViewController.m; sourceTree = "<group>"; };
+		1B5994981C4CA807002724C4 /* RSWebImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSWebImageCell.h; sourceTree = "<group>"; };
+		1B5994991C4CA807002724C4 /* RSWebImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSWebImageCell.m; sourceTree = "<group>"; };
+		1B59949A1C4CA807002724C4 /* RSWebImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSWebImageCell.xib; sourceTree = "<group>"; };
+		1B59949D1C4CA833002724C4 /* RSWebImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSWebImageModel.h; sourceTree = "<group>"; };
+		1B59949E1C4CA833002724C4 /* RSWebImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSWebImageModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B59944D1C4CA615002724C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5994661C4CA616002724C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5994711C4CA616002724C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B5994471C4CA615002724C4 = {
+			isa = PBXGroup;
+			children = (
+				1B5994521C4CA615002724C4 /* Demo_RSWebImageCache */,
+				1B59946C1C4CA616002724C4 /* Demo_RSWebImageCacheTests */,
+				1B5994771C4CA616002724C4 /* Demo_RSWebImageCacheUITests */,
+				1B5994511C4CA615002724C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B5994511C4CA615002724C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B5994501C4CA615002724C4 /* Demo_RSWebImageCache.app */,
+				1B5994691C4CA616002724C4 /* Demo_RSWebImageCacheTests.xctest */,
+				1B5994741C4CA616002724C4 /* Demo_RSWebImageCacheUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B5994521C4CA615002724C4 /* Demo_RSWebImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				1B5994891C4CA775002724C4 /* AppDelegate */,
+				1B59948C1C4CA775002724C4 /* Controllers */,
+				1B59948F1C4CA775002724C4 /* Models */,
+				1B5994901C4CA775002724C4 /* Views */,
+				1B59945F1C4CA615002724C4 /* Assets.xcassets */,
+				1B5994611C4CA615002724C4 /* LaunchScreen.storyboard */,
+				1B5994641C4CA615002724C4 /* Info.plist */,
+				1B5994531C4CA615002724C4 /* Supporting Files */,
+			);
+			path = Demo_RSWebImageCache;
+			sourceTree = "<group>";
+		};
+		1B5994531C4CA615002724C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B5994541C4CA615002724C4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B59946C1C4CA616002724C4 /* Demo_RSWebImageCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B59946D1C4CA616002724C4 /* Demo_RSWebImageCacheTests.m */,
+				1B59946F1C4CA616002724C4 /* Info.plist */,
+			);
+			path = Demo_RSWebImageCacheTests;
+			sourceTree = "<group>";
+		};
+		1B5994771C4CA616002724C4 /* Demo_RSWebImageCacheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B5994781C4CA616002724C4 /* Demo_RSWebImageCacheUITests.m */,
+				1B59947A1C4CA616002724C4 /* Info.plist */,
+			);
+			path = Demo_RSWebImageCacheUITests;
+			sourceTree = "<group>";
+		};
+		1B5994891C4CA775002724C4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1B59948A1C4CA775002724C4 /* AppDelegate.h */,
+				1B59948B1C4CA775002724C4 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1B59948C1C4CA775002724C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B59948D1C4CA775002724C4 /* RSWebImageViewController.h */,
+				1B59948E1C4CA775002724C4 /* RSWebImageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B59948F1C4CA775002724C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B59949D1C4CA833002724C4 /* RSWebImageModel.h */,
+				1B59949E1C4CA833002724C4 /* RSWebImageModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B5994901C4CA775002724C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B5994981C4CA807002724C4 /* RSWebImageCell.h */,
+				1B5994991C4CA807002724C4 /* RSWebImageCell.m */,
+				1B59949A1C4CA807002724C4 /* RSWebImageCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B59944F1C4CA615002724C4 /* Demo_RSWebImageCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B59947D1C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCache" */;
+			buildPhases = (
+				1B59944C1C4CA615002724C4 /* Sources */,
+				1B59944D1C4CA615002724C4 /* Frameworks */,
+				1B59944E1C4CA615002724C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo_RSWebImageCache;
+			productName = Demo_RSWebImageCache;
+			productReference = 1B5994501C4CA615002724C4 /* Demo_RSWebImageCache.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B5994681C4CA616002724C4 /* Demo_RSWebImageCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B5994801C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCacheTests" */;
+			buildPhases = (
+				1B5994651C4CA616002724C4 /* Sources */,
+				1B5994661C4CA616002724C4 /* Frameworks */,
+				1B5994671C4CA616002724C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B59946B1C4CA616002724C4 /* PBXTargetDependency */,
+			);
+			name = Demo_RSWebImageCacheTests;
+			productName = Demo_RSWebImageCacheTests;
+			productReference = 1B5994691C4CA616002724C4 /* Demo_RSWebImageCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B5994731C4CA616002724C4 /* Demo_RSWebImageCacheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B5994831C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCacheUITests" */;
+			buildPhases = (
+				1B5994701C4CA616002724C4 /* Sources */,
+				1B5994711C4CA616002724C4 /* Frameworks */,
+				1B5994721C4CA616002724C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B5994761C4CA616002724C4 /* PBXTargetDependency */,
+			);
+			name = Demo_RSWebImageCacheUITests;
+			productName = Demo_RSWebImageCacheUITests;
+			productReference = 1B5994741C4CA616002724C4 /* Demo_RSWebImageCacheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B5994481C4CA615002724C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = hehai;
+				TargetAttributes = {
+					1B59944F1C4CA615002724C4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P4KTPZ4X29;
+					};
+					1B5994681C4CA616002724C4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P4KTPZ4X29;
+						TestTargetID = 1B59944F1C4CA615002724C4;
+					};
+					1B5994731C4CA616002724C4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P4KTPZ4X29;
+						TestTargetID = 1B59944F1C4CA615002724C4;
+					};
+				};
+			};
+			buildConfigurationList = 1B59944B1C4CA615002724C4 /* Build configuration list for PBXProject "Demo_RSWebImageCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B5994471C4CA615002724C4;
+			productRefGroup = 1B5994511C4CA615002724C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B59944F1C4CA615002724C4 /* Demo_RSWebImageCache */,
+				1B5994681C4CA616002724C4 /* Demo_RSWebImageCacheTests */,
+				1B5994731C4CA616002724C4 /* Demo_RSWebImageCacheUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B59944E1C4CA615002724C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5994631C4CA615002724C4 /* LaunchScreen.storyboard in Resources */,
+				1B59949C1C4CA807002724C4 /* RSWebImageCell.xib in Resources */,
+				1B5994601C4CA615002724C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5994671C4CA616002724C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5994721C4CA616002724C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B59944C1C4CA615002724C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5994911C4CA775002724C4 /* AppDelegate.m in Sources */,
+				1B5994921C4CA775002724C4 /* RSWebImageViewController.m in Sources */,
+				1B59949B1C4CA807002724C4 /* RSWebImageCell.m in Sources */,
+				1B5994551C4CA615002724C4 /* main.m in Sources */,
+				1B59949F1C4CA833002724C4 /* RSWebImageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5994651C4CA616002724C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B59946E1C4CA616002724C4 /* Demo_RSWebImageCacheTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5994701C4CA616002724C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5994791C4CA616002724C4 /* Demo_RSWebImageCacheUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B59946B1C4CA616002724C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B59944F1C4CA615002724C4 /* Demo_RSWebImageCache */;
+			targetProxy = 1B59946A1C4CA616002724C4 /* PBXContainerItemProxy */;
+		};
+		1B5994761C4CA616002724C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B59944F1C4CA615002724C4 /* Demo_RSWebImageCache */;
+			targetProxy = 1B5994751C4CA616002724C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B5994611C4CA615002724C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B5994621C4CA615002724C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B59947B1C4CA616002724C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B59947C1C4CA616002724C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B59947E1C4CA616002724C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Demo_RSWebImageCache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafsun.Demo-RSWebImageCache";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B59947F1C4CA616002724C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Demo_RSWebImageCache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafsun.Demo-RSWebImageCache";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B5994811C4CA616002724C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Demo_RSWebImageCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafsun.Demo-RSWebImageCacheTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo_RSWebImageCache.app/Demo_RSWebImageCache";
+			};
+			name = Debug;
+		};
+		1B5994821C4CA616002724C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Demo_RSWebImageCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafsun.Demo-RSWebImageCacheTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo_RSWebImageCache.app/Demo_RSWebImageCache";
+			};
+			name = Release;
+		};
+		1B5994841C4CA616002724C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Demo_RSWebImageCacheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafsun.Demo-RSWebImageCacheUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Demo_RSWebImageCache;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1B5994851C4CA616002724C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Demo_RSWebImageCacheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lafsun.Demo-RSWebImageCacheUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Demo_RSWebImageCache;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B59944B1C4CA615002724C4 /* Build configuration list for PBXProject "Demo_RSWebImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B59947B1C4CA616002724C4 /* Debug */,
+				1B59947C1C4CA616002724C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B59947D1C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B59947E1C4CA616002724C4 /* Debug */,
+				1B59947F1C4CA616002724C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B5994801C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B5994811C4CA616002724C4 /* Debug */,
+				1B5994821C4CA616002724C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B5994831C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCacheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B5994841C4CA616002724C4 /* Debug */,
+				1B5994851C4CA616002724C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B5994481C4CA615002724C4 /* Project object */;
+}
