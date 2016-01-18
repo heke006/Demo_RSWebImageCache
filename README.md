@@ -1,6 +1,17 @@
-# HHDemo_Pictures
+# Demo_RSWebImageCache
+
 ###实现了一个图片下载、缓存、显示的Demo，附带可以划动删除cell
-![image1](https://github.com/riversea2015/HHDemo_Pictures/blob/master/Pictures/image1.png?raw=true)
-![image2](https://github.com/riversea2015/HHDemo_Pictures/blob/master/Pictures/image2.png?raw=true)
-![image3](https://github.com/riversea2015/HHDemo_Pictures/blob/master/Pictures/image3.png?raw=true)
-![image4](https://github.com/riversea2015/HHDemo_Pictures/blob/master/Pictures/image4.png?raw=true)
+
+![Mou icon](https://github.com/riversea2015/HHDemo_Pictures/blob/master/ScreenShort.gif?raw=true)
+
+#### Author
+
+he hai, hehai682@126.com
+
+#### License
+
+HHDemo_Pictures is available under the MIT license. See the LICENSE file for more info.
+
+#### Notes
+
+...
