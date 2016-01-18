@@ -17,6 +17,7 @@
 		1B59949B1C4CA807002724C4 /* RSWebImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5994991C4CA807002724C4 /* RSWebImageCell.m */; };
 		1B59949C1C4CA807002724C4 /* RSWebImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B59949A1C4CA807002724C4 /* RSWebImageCell.xib */; };
 		1B59949F1C4CA833002724C4 /* RSWebImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59949E1C4CA833002724C4 /* RSWebImageModel.m */; };
+		1B5994A11C4CAD0D002724C4 /* Memo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B5994A01C4CAD0D002724C4 /* Memo.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		1B59949A1C4CA807002724C4 /* RSWebImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSWebImageCell.xib; sourceTree = "<group>"; };
 		1B59949D1C4CA833002724C4 /* RSWebImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSWebImageModel.h; sourceTree = "<group>"; };
 		1B59949E1C4CA833002724C4 /* RSWebImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSWebImageModel.m; sourceTree = "<group>"; };
+		1B5994A01C4CAD0D002724C4 /* Memo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Memo.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		1B5994471C4CA615002724C4 = {
 			isa = PBXGroup;
 			children = (
+				1B5994A01C4CAD0D002724C4 /* Memo.txt */,
 				1B5994521C4CA615002724C4 /* Demo_RSWebImageCache */,
 				1B59946C1C4CA616002724C4 /* Demo_RSWebImageCacheTests */,
 				1B5994771C4CA616002724C4 /* Demo_RSWebImageCacheUITests */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5994A11C4CAD0D002724C4 /* Memo.txt in Resources */,
 				1B5994631C4CA615002724C4 /* LaunchScreen.storyboard in Resources */,
 				1B59949C1C4CA807002724C4 /* RSWebImageCell.xib in Resources */,
 				1B5994601C4CA615002724C4 /* Assets.xcassets in Resources */,
@@ -539,6 +543,7 @@
 				1B59947F1C4CA616002724C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B5994801C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +552,7 @@
 				1B5994821C4CA616002724C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B5994831C4CA616002724C4 /* Build configuration list for PBXNativeTarget "Demo_RSWebImageCacheUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +561,7 @@
 				1B5994851C4CA616002724C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
